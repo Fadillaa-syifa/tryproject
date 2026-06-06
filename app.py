@@ -47,6 +47,7 @@ st.set_page_config(page_title="ChemBuddy", page_icon="🧪")
 st.title("🧪 ChemBuddy")
 st.subheader("Kalkulator Kimia Digital")
 
+st.sidebar.title("🧪 ChemBuddy")
 st.sidebar.markdown("---")
 
 menu = st.sidebar.radio(
