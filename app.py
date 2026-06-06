@@ -85,12 +85,12 @@ if menu == "Beranda":
     st.markdown("Selamat datang di ChemBuddy")
     st.caption("""ChemBuddy adalah platform pembelajaran yang dirancang untuk membantu mahasiswa, khususnya tingkat pertama, dalam memahami dan menyelesaikan perhitungan dasar pada mata kuliah *Kimia Dasar* dan *Fisika Dasar*.Melalui ChemBuddy, pengguna dapat dengan mudah melakukan berbagai konversi dan perhitungan, seperti:
        
-    * Konversi suhu
-    * Berat Molekul (BM)
-    * Berat Ekivalen (BE)
-    * Normalitas (N)
-    * Molaritas (M)
-    * Parts Per Million (PPM)
+        * Konversi suhu
+        * Berat Molekul (BM)
+        * Berat Ekivalen (BE)
+        * Normalitas (N)
+        * Molaritas (M)
+        * Parts Per Million (PPM)
     
  Mata kuliah Kimia Dasar,Titrimetri,dan Fisika Dasar sering menjadi tantangan bagi mahasiswa baru karena banyaknya konsep dan perhitungan yang harus dipahami. Tidak sedikit mahasiswa yang harus mengulang mata kuliah tersebut akibat kesulitan dalam memahami materi dasar. Oleh karena itu, ChemBuddy hadir sebagai solusi praktis untuk membantu proses belajar menjadi lebih mudah, cepat, dan efisien.Dengan fitur yang sederhana mudah digunakan, ChemBuddy diharapkan dapat menjadi teman belajar yang membantu mahasiswa meningkatkan pemahaman konsep serta mengurangi kesalahan dalam perhitungan.
     *Belajar lebih mudah, hitung lebih cepat, bersama ChemBuddy 🧪✨""")
