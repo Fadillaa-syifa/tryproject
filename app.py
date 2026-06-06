@@ -161,7 +161,6 @@ st.markdown("### Bagaimana pengalaman Anda menggunakan ChemBuddy?")
 feedback = st.feedback("thumbs")
 
 if feedback == 1:
-    st.balloons()
     st.success("Terima Kasih! 🧪✨")
 
 elif feedback == 0:
