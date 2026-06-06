@@ -164,13 +164,7 @@ elif menu == "ℹ️ About Us":
     else:
         st.error("File feedback.csv tidak ditemukan")
         
-   rata_rata = df["Rating"].mean()
-
-st.metric(
-    "⭐ Rata-rata Rating",
-    f"{rata_rata:.1f}/5"
-)
-
+   
 import pandas as pd
 import os
 
