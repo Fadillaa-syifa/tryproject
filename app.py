@@ -49,12 +49,18 @@ st.subheader("Kalkulator Kimia Digital")
 
 menu = st.sidebar.selectbox(
 "Pilih Menu",
-["Normalitas", "Molaritas", "BE", "BM", "Ar", "Konversi Suhu", "PPM"]
+["Beranda","Normalitas", "Molaritas", "BE", "BM", "Ar", "Konversi Suhu", "PPM","About Us"]
 )
+
+#BERANDA
+
+if menu == "Beranda":
+    st.title("🧪 ChemBuddy")
+    st.write("Selamat datang di ChemBuddy")
 
 # NORMALITAS
 
-if menu == "Normalitas":
+elif menu == "Normalitas":
     gram = st.number_input("Massa zat (gram)", min_value=0.0)
     be = st.number_input("Berat Ekivalen (BE)", min_value=0.0)
     volume = st.number_input("Volume larutan (mL)", min_value=0.0)
@@ -144,6 +150,11 @@ if st.button("Konversi"):
 
     st.success(f"Hasil = {hasil:.2f} {satuan}")
 
+#ABOUT US
+elif menu == "Tentang":
+    st.header("Tentang ChemBuddy")
+    st.write("ChemBuddy adalah kalkulator kimia digital.")
+    
 st.markdown("""
 <style>
 [data-testid="stSidebar"] {
