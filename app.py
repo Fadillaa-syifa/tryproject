@@ -83,9 +83,9 @@ menu = st.session_state.get("menu", "Beranda")
 
 if menu == "Beranda":
     st.markdown("""
-##Selamat Datang di ChemBuddy 🧪
+#Selamat Datang di ChemBuddy 🧪
 
-**ChemBuddy** adalah platform pembelajaran yang dirancang untuk membantu mahasiswa, khususnya tingkat pertama, dalam memahami dan menyelesaikan perhitungan dasar pada mata kuliah **Kimia Dasar** dan **Fisika Dasar**.
+**ChemBuddy** adalah platform pembelajaran yang dirancang untuk membantu mahasiswa, khususnya tingkat pertama, dalam memahami dan menyelesaikan perhitungan dasar pada mata kuliah **Kimia Dasar**,**Titrimetri**,dan **Fisika Dasar**.
 
 Melalui ChemBuddy, pengguna dapat dengan mudah melakukan berbagai konversi dan perhitungan, seperti:
 
