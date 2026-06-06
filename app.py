@@ -75,7 +75,7 @@ elif menu == "🧮 Normalitas":
 
     if st.button("Hitung Normalitas"):
         hasil = (gram / be) / (volume / 1000)
-        st.success(f"Normalitas = {hasil:.4f} N")
+        st.success(f"Normalitas = {hasil:.4f} grek/L")
 
 elif menu == "⚗️ Molaritas":
     gram = st.number_input("Massa zat (gram)", min_value=0.0)
@@ -84,7 +84,7 @@ elif menu == "⚗️ Molaritas":
 
     if st.button("Hitung Molaritas"):
         hasil = (gram / bm) / (volume / 1000)
-        st.success(f"Molaritas = {hasil:.4f} M")
+        st.success(f"Molaritas = {hasil:.4f} mol/L")
 
 elif menu == "📐 BE":
     bm = st.number_input("BM Senyawa", min_value=0.0)
@@ -92,7 +92,7 @@ elif menu == "📐 BE":
 
     if st.button("Hitung BE"):
         hasil = bm / valensi
-        st.success(f"BE = {hasil:.4f}")
+        st.success(f"BE = {hasil:.4f} g/grek")
 
 elif menu == "🔬 BM":
     unsur = st.selectbox("Pilih unsur", list(data_ar.keys()))
@@ -100,7 +100,7 @@ elif menu == "🔬 BM":
 
     if st.button("Hitung BM"):
         hasil = data_ar[unsur] * jumlah
-        st.success(f"BM = {hasil}")
+        st.success(f"BM = {hasil} g/mol")
 
 elif menu == "⚛️ Ar":
     unsur = st.selectbox("Pilih unsur", list(data_ar.keys()))
@@ -146,7 +146,7 @@ elif menu == "📊 PPM":
 
     if st.button("Hitung PPM"):
         hasil = massa / volume
-        st.success(f"PPM = {hasil:.4f}")
+        st.success(f"PPM = {hasil:.4f} mg/L")
 
 elif menu == "ℹ️ About Us":
     st.header("Tentang ChemBuddy")
