@@ -171,16 +171,28 @@ elif menu == "📈 Statistik Feedback":
 st.divider()
 st.caption("Bagaimana pengalaman Anda menggunakan ChemBuddy?")
 
-feedback = st.feedback("thumbs")
+rating = st.feedback("stars")
 
-if feedback == 1:
-    st.success("Terima Kasih! 🧪✨")
+if rating is not None:
+    st.success(f"Rating yang diberikan: {rating + 1} ⭐")
 
-elif feedback == 0:
-    st.info("Terima kasih atas masukan Anda. Kami akan terus meningkatkan ChemBuddy.")
 
-st.metric("👍 Positif", positif)
-st.metric("👎 Negatif", negatif)
+try:
+        df = pd.read_csv("feedback.csv")
+
+        rata_rata = df["Rating"].mean()
+
+        st.divider()
+
+        st.subheader("⭐ Penilaian Pengguna")
+
+        st.metric(
+            "Rata-rata Rating",
+            f"{rata_rata:.1f}/5"
+        )
+
+    except:
+        st.info("Belum ada rating yang masuk.")
 
 st.markdown("""
 <style>
