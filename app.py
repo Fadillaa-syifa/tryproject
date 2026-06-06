@@ -169,13 +169,13 @@ elif menu == "About Us":
     st.write("""
     Kami adalah tim pengembang ChemBuddy, sebuah platform edukasi yang dibuat untuk membantu mahasiswa dalam memahami dan menyelesaikan berbagai perhitungan dasar pada mata kuliah Kimia Dasar, Titimetri dan Fisika Dasar.ChemBuddy hadir sebagai solusi praktis bagi mahasiswa, khususnya tingkat pertama, yang sering menghadapi kesulitan dalam melakukan konversi dan perhitungan kimia. Dengan menyediakan fitur konversi suhu, Berat Molekul (BM), Berat Ekivalen (BE), Molaritas, Normalitas, dan PPM, kami berharap dapat membantu proses belajar menjadi lebih efektif dan efisien.Website ini dikembangkan sebagai bentuk kontribusi kami dalam memanfaatkan teknologi untuk mendukung pembelajaran sains yang lebih mudah diakses dan dipahami """)
 
-    st.write("Tim Pengembang ChemBuddy")
+    st.write("Tim Pengembang ChemBuddy:")
     st.write("""
-    1. *Asyifa Fadilla* (2460335)
-    2. *Muhamad Daffa Alfath* (2460425)
-    3. *Muhammad Al Fariz* (2460425)
-    4. *Nadifah Adya Anggita* (2460449)
-    5. *Ramdan Abdul Azis* (2460490)
+        1. *Asyifa Fadilla* (2460335)
+        2. *Muhamad Daffa Alfath* (2460425)
+        3. *Muhammad Al Fariz* (2460425)
+        4. *Nadifah Adya Anggita* (2460449)
+        5. *Ramdan Abdul Azis* (2460490)
 
     Kami percaya bahwa pembelajaran akan menjadi lebih menyenangkan ketika didukung oleh alat yang tepat. Oleh karena itu, melalui ChemBuddy kami berkomitmen untuk menghadirkan platform yang sederhana, bermanfaat, dan mudah digunakan oleh seluruh mahasiswa.
 
