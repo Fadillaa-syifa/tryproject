@@ -166,7 +166,7 @@ div[data-baseweb="select"] > div {
 
 st.markdown("""
 <style>
-div[data-baseweb="select"] > div {
+div[data-baseweb="select"] == div {
     background-color: #36454F;
 }
 </style>
