@@ -5,7 +5,7 @@ def get_base64(file):
     with open(file, "rb") as f:
         data = f.read()
     return base64.b64encode(data).decode()
-    bg = get_base64("images/background.jpg")
+    bg = get_base64("background.jpg")
     
 page_bg = f"""
 <style>
