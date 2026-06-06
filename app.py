@@ -155,6 +155,24 @@ elif menu == "ℹ️ About Us":
     mahasiswa dan praktikan melakukan perhitungan kimia dengan cepat.
     """)
 
+
+try:
+        df = pd.read_csv("feedback.csv")
+
+        rata_rata = df["Rating"].mean()
+
+        st.divider()
+
+        st.subheader("⭐ Penilaian Pengguna")
+
+        st.metric(
+            "Rata-rata Rating",
+            f"{rata_rata:.1f}/5"
+        )
+
+except:
+        st.info("Belum ada rating yang masuk.")
+
 elif menu == "📈 Statistik Feedback":
 
     if os.path.exists("feedback.csv"):
@@ -177,22 +195,6 @@ if rating is not None:
     st.success(f"Rating yang diberikan: {rating + 1} ⭐")
 
 
-try:
-        df = pd.read_csv("feedback.csv")
-
-        rata_rata = df["Rating"].mean()
-
-        st.divider()
-
-        st.subheader("⭐ Penilaian Pengguna")
-
-        st.metric(
-            "Rata-rata Rating",
-            f"{rata_rata:.1f}/5"
-        )
-
-except:
-        st.info("Belum ada rating yang masuk.")
 
 st.markdown("""
 <style>
