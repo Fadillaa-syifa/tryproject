@@ -147,12 +147,12 @@ if st.button("Konversi"):
 st.markdown("""
 <style>
 div[data-baseweb="input"] > div {
-    background-color: #BFE9FF;
+    background-color: #36454F;
     border-radius: 10px;
 }
 
 div[data-baseweb="input"] input {
-    color: #98AFC7;
+    color: #36454F;
 }
 </style>
 """, unsafe_allow_html=True)
