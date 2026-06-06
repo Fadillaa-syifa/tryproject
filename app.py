@@ -50,22 +50,36 @@ st.title("🧪 ChemBuddy")
 st.subheader("Kalkulator Kimia Digital")
 
 st.sidebar.title("🧪 ChemBuddy")
-st.sidebar.markdown("---")
+st.sidebar.markdown("## Pilih Menu")
 
-menu = st.sidebar.radio(
-    "Pilih Menu",
-    [
-        "🏠 Beranda",
-        "🧮 Normalitas",
-        "⚗️ Molaritas",
-        "📐 BE",
-        "🔬 BM",
-        "⚛️ Ar",
-        "🌡️ Konversi Suhu",
-        "📊 PPM",
-        "ℹ️ About Us"
-    ]
-)
+if st.sidebar.button("🏠 Beranda"):
+    st.session_state.menu = "Beranda"
+
+if st.sidebar.button("🧪 Normalitas"):
+    st.session_state.menu = "Normalitas"
+
+if st.sidebar.button("⚗️ Molaritas"):
+    st.session_state.menu = "Molaritas"
+
+if st.sidebar.button("📐 BE"):
+    st.session_state.menu = "BE"
+
+if st.sidebar.button("📏 BM"):
+    st.session_state.menu = "BM"
+
+if st.sidebar.button("⚛️ Ar"):
+    st.session_state.menu = "Ar"
+
+if st.sidebar.button("🌡️ Konversi Suhu"):
+    st.session_state.menu = "Konversi Suhu"
+
+if st.sidebar.button("📊 PPM"):
+    st.session_state.menu = "PPM"
+
+if st.sidebar.button("ℹ️ About Us"):
+    st.session_state.menu = "About Us"
+
+menu = st.session_state.get("menu", "Beranda")
 
 if menu == "🏠 Beranda":
     st.write("Selamat datang di ChemBuddy")
