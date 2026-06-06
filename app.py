@@ -1,5 +1,7 @@
 import streamlit as st
 import base64
+import pandas as pd
+import os
 
 def get_base64(file):
     with open(file, "rb") as f:
@@ -159,14 +161,20 @@ elif menu == "ℹ️ About Us":
         st.success("File feedback.csv ditemukan")
         
         df = pd.read_csv("feedback.csv")
+        rata_rata = df["Rating"].mean()
+
+    st.metric(
+    "⭐ Rata-rata Rating",
+    f"{rata_rata:.1f}/5"
+    )
+    
+    st.write(df.columns)
         st.write(df)
 
     else:
         st.error("File feedback.csv tidak ditemukan")
         
    
-import pandas as pd
-import os
 
 st.caption("Bagaimana pengalaman Anda menggunakan ChemBuddy?")
 
