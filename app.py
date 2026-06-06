@@ -152,7 +152,7 @@ div[data-baseweb="input"] > div {
 }
 
 div[data-baseweb="input"] input {
-    color: #000000;
+    color: #98AFC7;
 }
 </style>
 """, unsafe_allow_html=True)
