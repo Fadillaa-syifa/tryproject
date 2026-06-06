@@ -21,7 +21,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.title("🧪 ChemBuddy")
 
 # Data Ar unsur
 data_ar = {
