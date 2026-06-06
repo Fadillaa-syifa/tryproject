@@ -33,10 +33,9 @@ menu = st.sidebar.selectbox(
 # NORMALITAS
 
 if menu == "Normalitas":
-
-gram = st.number_input("Massa zat (gram)", min_value=0.0)
-be = st.number_input("Berat Ekivalen (BE)", min_value=0.0)
-volume = st.number_input("Volume larutan (mL)", min_value=0.0)
+    gram = st.number_input("Massa zat (gram)", min_value=0.0)
+    be = st.number_input("Berat Ekivalen (BE)", min_value=0.0)
+    volume = st.number_input("Volume larutan (mL)", min_value=0.0)
 
 if st.button("Hitung Normalitas"):
     hasil = (gram / be) / (volume / 1000)
