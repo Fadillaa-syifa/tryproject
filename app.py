@@ -157,20 +157,7 @@ elif menu == "ℹ️ About Us":
     mahasiswa dan praktikan melakukan perhitungan kimia dengan cepat.
     """)
     
-    if os.path.exists("feedback.csv"):
-        st.success("File feedback.csv ditemukan")
-        
-        df = pd.read_csv("feedback.csv")
-        rata_rata = df["Rating"].mean()
-
-    st.metric(
-    "⭐ Rata-rata Rating",
-    f"{rata_rata:.1f}/5"
-    )
     
-    st.write(df.columns)
-        
-   
 
 st.caption("Bagaimana pengalaman Anda menggunakan ChemBuddy?")
 
