@@ -166,6 +166,21 @@ if feedback == 1:
 elif feedback == 0:
     st.info("Terima kasih atas masukan Anda. Kami akan terus meningkatkan ChemBuddy.")
 
+"📈 Statistik Feedback"
+
+elif menu == "📈 Statistik Feedback":
+
+    if os.path.exists("feedback.csv"):
+
+        df = pd.read_csv("feedback.csv")
+
+        st.subheader("Data Feedback")
+
+        st.dataframe(df)
+
+        positif = (df["Feedback"] == "Positif").sum()
+        negatif = (df["Feedback"]
+
 st.markdown("""
 <style>
 [data-testid="stSidebar"] {
