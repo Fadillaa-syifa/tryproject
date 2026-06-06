@@ -138,9 +138,7 @@ elif menu == "BE":
         hasil = bm / valensi
         st.success(f"BE = {hasil:.4f} g/grek")
 
-    elif menu == "BM":
-
-    st.error("TES BM")
+elif menu == "BM":
 
     st.subheader("⚖️ Berat Molekul (BM)")
 
