@@ -154,9 +154,7 @@ elif menu == "ℹ️ About Us":
     ChemBuddy adalah kalkulator kimia digital yang membantu
     mahasiswa dan praktikan melakukan perhitungan kimia dengan cepat.
     """)
-
-
-try:
+    try:
         df = pd.read_csv("feedback.csv")
 
         rata_rata = df["Rating"].mean()
@@ -169,8 +167,8 @@ try:
             "Rata-rata Rating",
             f"{rata_rata:.1f}/5"
         )
-
-except:
+        
+    except:
         st.info("Belum ada rating yang masuk.")
 
 import pandas as pd
