@@ -171,11 +171,11 @@ elif menu == "About Us":
 
     st.write("Tim Pengembang ChemBuddy:")
     st.write("""
-        1. *Asyifa Fadilla* (2460335)
-        2. *Muhamad Daffa Alfath* (2460425)
-        3. *Muhammad Al Fariz* (2460425)
-        4. *Nadifah Adya Anggita* (2460449)
-        5. *Ramdan Abdul Azis* (2460490)
+    1. *Asyifa Fadilla* (2460335)
+    2. *Muhamad Daffa Alfath* (2460425)
+    3. *Muhammad Al Fariz* (2460425)
+    4. *Nadifah Adya Anggita* (2460449)
+    5. *Ramdan Abdul Azis* (2460490)
 
     Kami percaya bahwa pembelajaran akan menjadi lebih menyenangkan ketika didukung oleh alat yang tepat. Oleh karena itu, melalui ChemBuddy kami berkomitmen untuk menghadirkan platform yang sederhana, bermanfaat, dan mudah digunakan oleh seluruh mahasiswa.
 
