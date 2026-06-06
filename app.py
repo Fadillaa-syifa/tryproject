@@ -81,10 +81,10 @@ if st.sidebar.button("ℹ️ About Us"):
 
 menu = st.session_state.get("menu", "Beranda")
 
-if menu == "🏠 Beranda":
+if menu == " Beranda":
     st.write("Selamat datang di ChemBuddy")
 
-elif menu == "🧮 Normalitas":
+elif menu == " Normalitas":
     gram = st.number_input("Massa zat (gram)", min_value=0.0)
     be = st.number_input("Berat Ekivalen (BE)", min_value=0.0)
     volume = st.number_input("Volume larutan (mL)", min_value=0.0)
@@ -93,7 +93,7 @@ elif menu == "🧮 Normalitas":
         hasil = (gram / be) / (volume / 1000)
         st.success(f"Normalitas = {hasil:.4f} grek/L")
 
-elif menu == "⚗️ Molaritas":
+elif menu == " Molaritas":
     gram = st.number_input("Massa zat (gram)", min_value=0.0)
     bm = st.number_input("Berat Molekul (BM)", min_value=0.0)
     volume = st.number_input("Volume larutan (mL)", min_value=0.0)
@@ -102,7 +102,7 @@ elif menu == "⚗️ Molaritas":
         hasil = (gram / bm) / (volume / 1000)
         st.success(f"Molaritas = {hasil:.4f} mol/L")
 
-elif menu == "📐 BE":
+elif menu == "BE":
     bm = st.number_input("BM Senyawa", min_value=0.0)
     valensi = st.number_input("Valensi", min_value=1.0)
 
@@ -110,7 +110,7 @@ elif menu == "📐 BE":
         hasil = bm / valensi
         st.success(f"BE = {hasil:.4f} g/grek")
 
-elif menu == "🔬 BM":
+elif menu == "BM":
     unsur = st.selectbox("Pilih unsur", list(data_ar.keys()))
     jumlah = st.number_input("Jumlah atom", min_value=1, step=1)
 
@@ -118,11 +118,11 @@ elif menu == "🔬 BM":
         hasil = data_ar[unsur] * jumlah
         st.success(f"BM = {hasil} g/mol")
 
-elif menu == "⚛️ Ar":
+elif menu == "Ar":
     unsur = st.selectbox("Pilih unsur", list(data_ar.keys()))
     st.info(f"Ar {unsur} = {data_ar[unsur]}")
 
-elif menu == "🌡️ Konversi Suhu":
+elif menu == "Konversi Suhu":
 
     jenis = st.selectbox(
         "Konversi",
@@ -156,7 +156,7 @@ elif menu == "🌡️ Konversi Suhu":
 
         st.success(f"Hasil = {hasil:.2f} {satuan}")
 
-elif menu == "📊 PPM":
+elif menu == "PPM":
     massa = st.number_input("Massa zat terlarut (mg)", min_value=0.0)
     volume = st.number_input("Volume larutan (L)", min_value=0.0)
 
@@ -164,7 +164,7 @@ elif menu == "📊 PPM":
         hasil = massa / volume
         st.success(f"PPM = {hasil:.4f} mg/L")
 
-elif menu == "ℹ️ About Us":
+elif menu == "About Us":
     st.header("Tentang ChemBuddy")
     st.write("""
     ChemBuddy adalah kalkulator kimia digital yang membantu
