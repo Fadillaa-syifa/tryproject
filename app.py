@@ -66,7 +66,6 @@ menu = st.sidebar.radio(
 )
 
 if menu == "🏠 Beranda":
-    st.title("🧪 ChemBuddy")
     st.write("Selamat datang di ChemBuddy")
 
 elif menu == "🧮 Normalitas":
