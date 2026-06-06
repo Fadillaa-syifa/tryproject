@@ -159,6 +159,13 @@ div[data-baseweb="input"] input {
 
 st.markdown("""
 <style>
+
+/* Kotak selectbox */
+div[data-baseweb="select"] > div {
+    background-color: #36454F !
+
+st.markdown("""
+<style>
 [data-testid="stSidebar"] {
     background-color: rgba(0, 50, 100, 0.85);
 }
