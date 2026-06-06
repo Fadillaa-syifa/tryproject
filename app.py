@@ -83,6 +83,7 @@ menu = st.session_state.get("menu", "Beranda")
 
 if menu == "Beranda":
     st.markdown("""
+# Selamat Datang di ChemBuddy 🧪
 
 **ChemBuddy** adalah platform pembelajaran yang dirancang untuk membantu mahasiswa, khususnya tingkat pertama, dalam memahami dan menyelesaikan perhitungan dasar pada mata kuliah **Kimia Dasar**,**Titrimetri**,dan **Fisika Dasar**.
 
@@ -198,7 +199,7 @@ elif menu == "About Us":
 
     Kami percaya bahwa pembelajaran akan menjadi lebih menyenangkan ketika didukung oleh alat yang tepat. Oleh karena itu, melalui ChemBuddy kami berkomitmen untuk menghadirkan platform yang sederhana, bermanfaat, dan mudah digunakan oleh seluruh mahasiswa.
 
-    *ChemBuddy — Your Smart Chemistry Learning Companion.* 🧪✨
+    >**ChemBuddy — Your Smart Chemistry Learning Companion.**🧪✨
         """)
     
     if os.path.exists("feedback.csv"):
