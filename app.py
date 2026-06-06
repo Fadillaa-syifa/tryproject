@@ -213,6 +213,24 @@ if rating is not None:
             index=False
         )
 
+st.markdown("""
+<style>
+
+/* Warna tombol menu sidebar */
+[data-testid="stSidebar"] .stButton button {
+    background-color: #4A90C2;   /* warna tombol */
+    color: white;                /* warna tulisan */
+    border-radius: 10px;
+}
+
+/* Saat kursor diarahkan */
+[data-testid="stSidebar"] .stButton button:hover {
+    background-color: #2E86C1;
+    color: white;
+}
+
+</style>
+""", unsafe_allow_html=True)
 
 st.markdown("""
 <style>
