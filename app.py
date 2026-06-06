@@ -166,7 +166,7 @@ elif menu == "📈 Statistik Feedback":
         st.dataframe(df)
 
         positif = (df["feedback"] == "Positif").sum()
-        negatif = (df["feedback"]
+        negatif = (df["feedback"] == "Negatif").sum()
 
 st.divider()
 st.caption("Bagaimana pengalaman Anda menggunakan ChemBuddy?")
