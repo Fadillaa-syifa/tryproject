@@ -3,24 +3,23 @@ import base64
 
 def get_base64(file):
     with open(file, "rb") as f:
-        data = f.read()
-    return base64.b64encode(data).decode()
-    bg = get_base64("background.jpg")
-    
-page_bg = f"""
-<style>
-[data-testid="stAppViewContainer"] {{  
-    background-image: url("data:image/jpg;base64,{bg}");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}}
+        return base64.b64encode(f.read()).decode()
 
-}}
-</style>
-"""
+bg = get_base64("background.jpg")
 
-st.markdown(page_bg, unsafe_allow_html=True)
+st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url("data:image/jpg;base64,{bg}");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.title("🧪 ChemBuddy")
 
