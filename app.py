@@ -47,113 +47,114 @@ st.set_page_config(page_title="ChemBuddy", page_icon="🧪")
 st.title("🧪 ChemBuddy")
 st.subheader("Kalkulator Kimia Digital")
 
-menu = st.sidebar.selectbox(
-"Pilih Menu",
-["Beranda","Normalitas", "Molaritas", "BE", "BM", "Ar", "Konversi Suhu", "PPM","About Us"]
+st.sidebar.title("🧪 ChemBuddy")
+st.sidebar.markdown("---")
+
+menu = st.sidebar.radio(
+    "Pilih Menu",
+    [
+        "🏠 Beranda",
+        "🧮 Normalitas",
+        "⚗️ Molaritas",
+        "📐 BE",
+        "🔬 BM",
+        "⚛️ Ar",
+        "🌡️ Konversi Suhu",
+        "📊 PPM",
+        "ℹ️ About Us"
+    ]
 )
 
-#BERANDA
-
-if menu == "Beranda":
+if menu == "🏠 Beranda":
     st.title("🧪 ChemBuddy")
     st.write("Selamat datang di ChemBuddy")
 
-# NORMALITAS
-
-elif menu == "Normalitas":
+elif menu == "🧮 Normalitas":
     gram = st.number_input("Massa zat (gram)", min_value=0.0)
     be = st.number_input("Berat Ekivalen (BE)", min_value=0.0)
     volume = st.number_input("Volume larutan (mL)", min_value=0.0)
 
-if st.button("Hitung Normalitas"):
-    hasil = (gram / be) / (volume / 1000)
-    st.success(f"Normalitas = {hasil:.4f} N")
+    if st.button("Hitung Normalitas"):
+        hasil = (gram / be) / (volume / 1000)
+        st.success(f"Normalitas = {hasil:.4f} N")
 
-# MOLARITAS
-
-elif menu == "Molaritas":
+elif menu == "⚗️ Molaritas":
     gram = st.number_input("Massa zat (gram)", min_value=0.0)
     bm = st.number_input("Berat Molekul (BM)", min_value=0.0)
     volume = st.number_input("Volume larutan (mL)", min_value=0.0)
 
-if st.button("Hitung Molaritas"):
-    hasil = (gram / bm) / (volume / 1000)
-    st.success(f"Molaritas = {hasil:.4f} M")
+    if st.button("Hitung Molaritas"):
+        hasil = (gram / bm) / (volume / 1000)
+        st.success(f"Molaritas = {hasil:.4f} M")
 
-# BM
-
-elif menu == "BM":
-    unsur = st.selectbox("Pilih unsur", list(data_ar.keys()))
-    jumlah = st.number_input("Jumlah atom", min_value=1, step=1)
-
-if st.button("Hitung BM"):
-    hasil = data_ar[unsur] * jumlah
-    st.success(f"BM = {hasil}")
-
-# AR
-
-elif menu == "Ar":
-    unsur = st.selectbox("Pilih unsur", list(data_ar.keys()))
-    st.info(f"Ar {unsur} = {data_ar[unsur]}")
-
-# PPM
-
-elif menu == "PPM":
-    massa = st.number_input("Massa zat terlarut (mg)", min_value=0.0)
-    volume = st.number_input("Volume larutan (L)", min_value=0.0)
-
-if st.button("Hitung PPM"):
-    hasil = massa / volume
-    st.success(f"PPM = {hasil:.4f}")
-
-# BE
-
-elif menu == "BE":
+elif menu == "📐 BE":
     bm = st.number_input("BM Senyawa", min_value=0.0)
     valensi = st.number_input("Valensi", min_value=1.0)
 
-if st.button("Hitung BE"):
-    hasil = bm / valensi
-    st.success(f"BE = {hasil:.4f}")
+    if st.button("Hitung BE"):
+        hasil = bm / valensi
+        st.success(f"BE = {hasil:.4f}")
 
-# KONVERSI SUHU
+elif menu == "🔬 BM":
+    unsur = st.selectbox("Pilih unsur", list(data_ar.keys()))
+    jumlah = st.number_input("Jumlah atom", min_value=1, step=1)
 
-elif menu == "Konversi Suhu":
-    jenis = st.selectbox("Konversi",
-    [
-        "Celcius ke Fahrenheit",
-        "Celcius ke Kelvin",
-        "Fahrenheit ke Celcius",
-        "Kelvin ke Celcius"
-    ]
-)
+    if st.button("Hitung BM"):
+        hasil = data_ar[unsur] * jumlah
+        st.success(f"BM = {hasil}")
 
-suhu = st.number_input("Masukkan suhu")
+elif menu == "⚛️ Ar":
+    unsur = st.selectbox("Pilih unsur", list(data_ar.keys()))
+    st.info(f"Ar {unsur} = {data_ar[unsur]}")
 
-if st.button("Konversi"):
+elif menu == "🌡️ Konversi Suhu":
 
-    if jenis == "Celcius ke Fahrenheit":
-        hasil = (suhu * 9/5) + 32
-        satuan = "°F"
+    jenis = st.selectbox(
+        "Konversi",
+        [
+            "Celcius ke Fahrenheit",
+            "Celcius ke Kelvin",
+            "Fahrenheit ke Celcius",
+            "Kelvin ke Celcius"
+        ]
+    )
 
-    elif jenis == "Celcius ke Kelvin":
-        hasil = suhu + 273.15
-        satuan = "K"
+    suhu = st.number_input("Masukkan suhu")
 
-    elif jenis == "Fahrenheit ke Celcius":
-        hasil = (suhu - 32) * 5/9
-        satuan = "°C"
+    if st.button("Konversi"):
 
-    else:
-        hasil = suhu - 273.15
-        satuan = "°C"
+        if jenis == "Celcius ke Fahrenheit":
+            hasil = (suhu * 9/5) + 32
+            satuan = "°F"
 
-    st.success(f"Hasil = {hasil:.2f} {satuan}")
+        elif jenis == "Celcius ke Kelvin":
+            hasil = suhu + 273.15
+            satuan = "K"
 
-#ABOUT US
-elif menu == "Tentang":
+        elif jenis == "Fahrenheit ke Celcius":
+            hasil = (suhu - 32) * 5/9
+            satuan = "°C"
+
+        else:
+            hasil = suhu - 273.15
+            satuan = "°C"
+
+        st.success(f"Hasil = {hasil:.2f} {satuan}")
+
+elif menu == "📊 PPM":
+    massa = st.number_input("Massa zat terlarut (mg)", min_value=0.0)
+    volume = st.number_input("Volume larutan (L)", min_value=0.0)
+
+    if st.button("Hitung PPM"):
+        hasil = massa / volume
+        st.success(f"PPM = {hasil:.4f}")
+
+elif menu == "ℹ️ About Us":
     st.header("Tentang ChemBuddy")
-    st.write("ChemBuddy adalah kalkulator kimia digital.")
+    st.write("""
+    ChemBuddy adalah kalkulator kimia digital yang membantu
+    mahasiswa dan praktikan melakukan perhitungan kimia dengan cepat.
+    """)
     
 st.markdown("""
 <style>
