@@ -146,6 +146,19 @@ if st.button("Konversi"):
 
 st.markdown("""
 <style>
+div[data-baseweb="input"] > div {
+    background-color: #BFE9FF;
+    border-radius: 10px;
+}
+
+div[data-baseweb="input"] input {
+    color: #000000;
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<style>
 [data-testid="stSidebar"] {
     background-color: rgba(0, 50, 100, 0.85);
 }
