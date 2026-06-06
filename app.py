@@ -167,8 +167,7 @@ elif menu == "PPM":
 elif menu == "About Us":
     st.header("Tentang ChemBuddy")
     st.write("""
-    Kami adalah tim pengembang *ChemBuddy, sebuah platform edukasi yang dibuat untuk membantu mahasiswa dalam memahami dan menyelesaikan berbagai perhitungan dasar pada mata kuliah Kimia Dasar, Titimetri dan Fisika Dasar.ChemBuddy hadir sebagai solusi praktis bagi mahasiswa, khususnya tingkat pertama, yang sering menghadapi kesulitan dalam melakukan konversi dan perhitungan kimia. Dengan menyediakan fitur konversi suhu, Berat Molekul (BM), Berat Ekivalen (BE), Molaritas, Normalitas, dan PPM, kami berharap dapat membantu proses belajar menjadi lebih efektif dan efisien.
-    Website ini dikembangkan sebagai bentuk kontribusi kami dalam memanfaatkan teknologi untuk mendukung pembelajaran sains yang lebih mudah diakses dan dipahami.
+    Kami adalah tim pengembang ChemBuddy, sebuah platform edukasi yang dibuat untuk membantu mahasiswa dalam memahami dan menyelesaikan berbagai perhitungan dasar pada mata kuliah Kimia Dasar, Titimetri dan Fisika Dasar.ChemBuddy hadir sebagai solusi praktis bagi mahasiswa, khususnya tingkat pertama, yang sering menghadapi kesulitan dalam melakukan konversi dan perhitungan kimia. Dengan menyediakan fitur konversi suhu, Berat Molekul (BM), Berat Ekivalen (BE), Molaritas, Normalitas, dan PPM, kami berharap dapat membantu proses belajar menjadi lebih efektif dan efisien.Website ini dikembangkan sebagai bentuk kontribusi kami dalam memanfaatkan teknologi untuk mendukung pembelajaran sains yang lebih mudah diakses dan dipahami.
 
     ## Tim Pengembang ChemBuddy
     
