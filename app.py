@@ -173,27 +173,35 @@ try:
 except:
         st.info("Belum ada rating yang masuk.")
 
-elif menu == "📈 Statistik Feedback":
+import pandas as pd
+import os
 
-    if os.path.exists("feedback.csv"):
-
-        df = pd.read_csv("feedback.csv")
-
-        st.subheader("Data Feedback")
-
-        st.dataframe(df)
-
-        positif = (df["feedback"] == "Positif").sum()
-        negatif = (df["feedback"] == "Negatif").sum()
-
-st.divider()
 st.caption("Bagaimana pengalaman Anda menggunakan ChemBuddy?")
 
 rating = st.feedback("stars")
 
 if rating is not None:
-    st.success(f"Rating yang diberikan: {rating + 1} ⭐")
 
+    rating_bintang = rating + 1
+
+    st.success(f"Rating yang diberikan: {rating_bintang} ⭐")
+
+    data = pd.DataFrame({
+        "Rating": [rating_bintang]
+    })
+
+    if os.path.exists("feedback.csv"):
+        data.to_csv(
+            "feedback.csv",
+            mode="a",
+            header=False,
+            index=False
+        )
+    else:
+        data.to_csv(
+            "feedback.csv",
+            index=False
+        )
 
 
 st.markdown("""
