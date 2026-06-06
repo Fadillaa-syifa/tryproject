@@ -147,7 +147,7 @@ if st.button("Konversi"):
 st.markdown("""
 <style>
 [data-testid="stSidebar"] {
-    background-color: #0E4D92;
+    background-color: #003152;
 }
 </style>
 """, unsafe_allow_html=True)
