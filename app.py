@@ -191,7 +191,7 @@ try:
             f"{rata_rata:.1f}/5"
         )
 
-    except:
+except:
         st.info("Belum ada rating yang masuk.")
 
 st.markdown("""
