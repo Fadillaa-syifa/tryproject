@@ -169,7 +169,6 @@ elif menu == "ℹ️ About Us":
     )
     
     st.write(df.columns)
-        st.write(df)
 
     else:
         st.error("File feedback.csv tidak ditemukan")
