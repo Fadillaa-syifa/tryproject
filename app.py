@@ -179,6 +179,8 @@ if feedback == 1:
 elif feedback == 0:
     st.info("Terima kasih atas masukan Anda. Kami akan terus meningkatkan ChemBuddy.")
 
+st.metric("👍 Positif", positif)
+st.metric("👎 Negatif", negatif)
 
 st.markdown("""
 <style>
