@@ -162,7 +162,7 @@ feedback = st.feedback("thumbs")
 
 if feedback == 1:
     st.balloons()
-    st.success("Senang ChemBuddy membantu! 🧪✨")
+    st.success("Terima Kasih! 🧪✨")
 
 elif feedback == 0:
     st.info("Terima kasih atas masukan Anda. Kami akan terus meningkatkan ChemBuddy.")
