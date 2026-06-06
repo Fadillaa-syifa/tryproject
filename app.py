@@ -1,4 +1,35 @@
 import streamlit as st
+import base64
+
+def get_base64(file):
+    with open(file, "rb") as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+    
+bg = get_base64("background.jpg")
+    
+page_bg = f"""
+<style>
+[data-testid="stAppViewContainer"] {{
+    background-image: url("data:image/jpg;base64,{bg}");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}}
+
+[data-testid="stHeader"] {{
+    background: rgba(0,0,0,0);
+}}
+
+[data-testid="stSidebar"] {{
+    background: rgba(255,255,255,0.8);
+}}
+</style>
+"""
+
+st.markdown(page_bg, unsafe_allow_html=True)
+
+st.title("🧪 ChemBuddy")
 
 # Data Ar unsur
 data_ar = {
