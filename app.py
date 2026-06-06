@@ -163,5 +163,16 @@ st.markdown("""
 /* Kotak selectbox */
 div[data-baseweb="select"] > div {
     background-color: #36454F;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Teks di dalam selectbox */
+div[data-baseweb="select"] span {
+    color: white;
+}
+
+</style>
+""", unsafe_allow_html=True)
 
 
