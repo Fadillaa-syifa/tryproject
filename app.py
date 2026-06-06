@@ -154,7 +154,19 @@ elif menu == "ℹ️ About Us":
     ChemBuddy adalah kalkulator kimia digital yang membantu
     mahasiswa dan praktikan melakukan perhitungan kimia dengan cepat.
     """)
-    
+
+st.divider()
+st.markdown("### Bagaimana pengalaman Anda menggunakan ChemBuddy?")
+
+feedback = st.feedback("thumbs")
+
+if feedback == 1:
+    st.balloons()
+    st.success("Senang ChemBuddy membantu! 🧪✨")
+
+elif feedback == 0:
+    st.info("Terima kasih atas masukan Anda. Kami akan terus meningkatkan ChemBuddy.")
+
 st.markdown("""
 <style>
 [data-testid="stSidebar"] {
