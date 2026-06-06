@@ -91,9 +91,7 @@ if st.button("Hitung BE"):
 # KONVERSI SUHU
 
 elif menu == "Konversi Suhu":
-
-jenis = st.selectbox(
-    "Konversi",
+    jenis = st.selectbox("Konversi",
     [
         "Celcius ke Fahrenheit",
         "Celcius ke Kelvin",
