@@ -10,8 +10,7 @@ def get_base64(file):
 page_bg = f"""
 <style>
 [data-testid="stAppViewContainer"] 
-{{
-    background-image: url("data:image/jpg;base64,{bg}");
+{{  background-image: url("data:image/jpg;base64,{bg}");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
