@@ -143,7 +143,7 @@ elif menu == "BM":
     st.subheader("⚖️ Berat Molekul (BM)")
 
     st.info("""
-Berat Molekul atau Massa Molekul Relatif (Mr) merupakan jumlah massa atom relatif seluruh atom yang menyusun suatu molekul. BM digunakan untuk menghitung massa zat, jumlah mol, molaritas, dan berbagai perhitungan stoikiometri. Nilai BM diperoleh dengan menjumlahkan seluruh Ar unsur penyusunnya. Satuan yang digunakan adalah *gram per mol (g/mol)
+Berat Molekul atau Massa Molekul Relatif (Mr) merupakan jumlah massa atom relatif seluruh atom yang menyusun suatu molekul. BM digunakan untuk menghitung massa zat, jumlah mol, molaritas, dan berbagai perhitungan stoikiometri. Nilai BM diperoleh dengan menjumlahkan seluruh Ar unsur penyusunnya. Satuan yang digunakan adalah gram per mol (g/mol)
 
 Rumus:
 BM = Σ(Ar × jumlah atom)
