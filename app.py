@@ -156,7 +156,7 @@ elif menu == "ℹ️ About Us":
     """)
 
 st.divider()
-st.markdown("### Bagaimana pengalaman Anda menggunakan ChemBuddy?")
+st.caption("### Bagaimana pengalaman Anda menggunakan ChemBuddy?")
 
 feedback = st.feedback("thumbs")
 
