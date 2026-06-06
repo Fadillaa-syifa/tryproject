@@ -35,7 +35,6 @@ menu = st.sidebar.selectbox(
 
 if menu == "Normalitas":
 
-```
 gram = st.number_input("Massa zat (gram)", min_value=0.0)
 be = st.number_input("Berat Ekivalen (BE)", min_value=0.0)
 volume = st.number_input("Volume larutan (mL)", min_value=0.0)
@@ -43,13 +42,11 @@ volume = st.number_input("Volume larutan (mL)", min_value=0.0)
 if st.button("Hitung Normalitas"):
     hasil = (gram / be) / (volume / 1000)
     st.success(f"Normalitas = {hasil:.4f} N")
-```
 
 # MOLARITAS
 
 elif menu == "Molaritas":
 
-```
 gram = st.number_input("Massa zat (gram)", min_value=0.0)
 bm = st.number_input("Berat Molekul (BM)", min_value=0.0)
 volume = st.number_input("Volume larutan (mL)", min_value=0.0)
@@ -57,62 +54,52 @@ volume = st.number_input("Volume larutan (mL)", min_value=0.0)
 if st.button("Hitung Molaritas"):
     hasil = (gram / bm) / (volume / 1000)
     st.success(f"Molaritas = {hasil:.4f} M")
-```
 
 # BM
 
 elif menu == "BM":
 
-```
 unsur = st.selectbox("Pilih unsur", list(data_ar.keys()))
 jumlah = st.number_input("Jumlah atom", min_value=1, step=1)
 
 if st.button("Hitung BM"):
     hasil = data_ar[unsur] * jumlah
     st.success(f"BM = {hasil}")
-```
 
 # AR
 
 elif menu == "Ar":
 
-```
 unsur = st.selectbox("Pilih unsur", list(data_ar.keys()))
 
 st.info(f"Ar {unsur} = {data_ar[unsur]}")
-```
 
 # PPM
 
 elif menu == "PPM":
 
-```
 massa = st.number_input("Massa zat terlarut (mg)", min_value=0.0)
 volume = st.number_input("Volume larutan (L)", min_value=0.0)
 
 if st.button("Hitung PPM"):
     hasil = massa / volume
     st.success(f"PPM = {hasil:.4f}")
-```
 
 # BE
 
 elif menu == "BE":
 
-```
 bm = st.number_input("BM Senyawa", min_value=0.0)
 valensi = st.number_input("Valensi", min_value=1.0)
 
 if st.button("Hitung BE"):
     hasil = bm / valensi
     st.success(f"BE = {hasil:.4f}")
-```
 
 # KONVERSI SUHU
 
 elif menu == "Konversi Suhu":
 
-```
 jenis = st.selectbox(
     "Konversi",
     [
@@ -144,4 +131,3 @@ if st.button("Konversi"):
         satuan = "°C"
 
     st.success(f"Hasil = {hasil:.2f} {satuan}")
-```
