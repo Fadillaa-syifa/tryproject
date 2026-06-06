@@ -143,3 +143,11 @@ if st.button("Konversi"):
         satuan = "°C"
 
     st.success(f"Hasil = {hasil:.2f} {satuan}")
+
+st.markdown("""
+<style>
+[data-testid="stSidebar"] {
+    background-color: rgba(0, 50, 100, 0.85);
+}
+</style>
+""", unsafe_allow_html=True)
