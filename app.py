@@ -1,7 +1,6 @@
 import streamlit as st
 
 # Data Ar unsur
-
 data_ar = {
 "H": 1,
 "C": 12,
