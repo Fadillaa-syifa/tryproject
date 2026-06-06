@@ -45,7 +45,6 @@ data_ar = {
 }
 
 st.set_page_config(page_title="ChemBuddy", page_icon="🧪")
-st.subheader("Kalkulator Kimia Digital")
 
 st.sidebar.title("🧪 ChemBuddy")
 st.sidebar.markdown("## Pilih Menu")
