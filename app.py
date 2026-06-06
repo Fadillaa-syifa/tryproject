@@ -155,19 +155,6 @@ elif menu == "ℹ️ About Us":
     mahasiswa dan praktikan melakukan perhitungan kimia dengan cepat.
     """)
 
-st.divider()
-st.caption("Bagaimana pengalaman Anda menggunakan ChemBuddy?")
-
-feedback = st.feedback("thumbs")
-
-if feedback == 1:
-    st.success("Terima Kasih! 🧪✨")
-
-elif feedback == 0:
-    st.info("Terima kasih atas masukan Anda. Kami akan terus meningkatkan ChemBuddy.")
-
-"📈 Statistik Feedback"
-
 elif menu == "📈 Statistik Feedback":
 
     if os.path.exists("feedback.csv"):
@@ -180,6 +167,18 @@ elif menu == "📈 Statistik Feedback":
 
         positif = (df["Feedback"] == "Positif").sum()
         negatif = (df["Feedback"]
+
+st.divider()
+st.caption("Bagaimana pengalaman Anda menggunakan ChemBuddy?")
+
+feedback = st.feedback("thumbs")
+
+if feedback == 1:
+    st.success("Terima Kasih! 🧪✨")
+
+elif feedback == 0:
+    st.info("Terima kasih atas masukan Anda. Kami akan terus meningkatkan ChemBuddy.")
+
 
 st.markdown("""
 <style>
