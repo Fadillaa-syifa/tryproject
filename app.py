@@ -172,7 +172,6 @@ elif menu == "About Us":
     """)
     
     if os.path.exists("feedback.csv"):
-        st.success("File feedback.csv ditemukan")
         
         df = pd.read_csv("feedback.csv")
         rata_rata = df["Rating"].mean()
