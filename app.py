@@ -166,8 +166,8 @@ div[data-baseweb="select"] > div {
 
 st.markdown("""
 <style>
-[data-testid="stSidebar"] {
-    background-color: rgba(0, 50, 100, 0.85);
+div[data-baseweb="select"] > div {
+    background-color: #36454F;
 }
 </style>
 """, unsafe_allow_html=True)
