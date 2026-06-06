@@ -84,7 +84,7 @@ menu = st.session_state.get("menu", "Beranda")
 if menu == " Beranda":
     st.write("Selamat datang di ChemBuddy")
 
-elif menu == " Normalitas":
+elif menu == "Normalitas":
     gram = st.number_input("Massa zat (gram)", min_value=0.0)
     be = st.number_input("Berat Ekivalen (BE)", min_value=0.0)
     volume = st.number_input("Volume larutan (mL)", min_value=0.0)
@@ -93,7 +93,7 @@ elif menu == " Normalitas":
         hasil = (gram / be) / (volume / 1000)
         st.success(f"Normalitas = {hasil:.4f} grek/L")
 
-elif menu == " Molaritas":
+elif menu == "Molaritas":
     gram = st.number_input("Massa zat (gram)", min_value=0.0)
     bm = st.number_input("Berat Molekul (BM)", min_value=0.0)
     volume = st.number_input("Volume larutan (mL)", min_value=0.0)
