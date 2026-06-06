@@ -155,7 +155,7 @@ st.markdown("""
 st.markdown("""
 <style>
 div[data-baseweb="input"] > div {
-    background-color: #89CFF0;
+    background-color: #003152;
     border-radius: 10px;
 }
 
