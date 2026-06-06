@@ -81,7 +81,7 @@ if st.sidebar.button("ℹ️ About Us"):
 
 menu = st.session_state.get("menu", "Beranda")
 
-if menu == " Beranda":
+if menu == "Beranda":
     st.write("Selamat datang di ChemBuddy")
     st.caption("""ChemBuddy adalah platform pembelajaran yang dirancang untuk membantu mahasiswa, khususnya tingkat pertama, dalam memahami dan menyelesaikan perhitungan dasar pada mata kuliah *Kimia Dasar* dan *Fisika Dasar*.Melalui ChemBuddy, pengguna dapat dengan mudah melakukan berbagai konversi dan perhitungan, seperti:
         * Konversi suhu
